@@ -12,11 +12,11 @@ class LoginPage {
     );
   }
 
-  enterUsername(username) {
-    cy.xpath(this.username).type(username);
+  enterUsername(val) {
+    cy.xpath(this.username).type(val);
   }
-  enterPassword(password) {
-    cy.xpath(this.password).type(password);
+  enterPassword(val) {
+    cy.xpath(this.password).type(val);
   }
   clickLogin() {
     cy.xpath(this.loginBtn).click();
@@ -40,3 +40,4 @@ class LoginPage {
 }
 
 export default new LoginPage();
+
